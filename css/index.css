@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+
+input {
+    -webkit-appearance: none;
+}
+
+img,
+a {
+    -webkit-touch-callout: none;
+}
+
+body {
+    width: 100%;
+    max-width: 640px;
+    min-width: 320px;
+    margin: 0 auto;
+    font-size: 14px;
+    font-family: -apple-system, Helvetica, sans-serif;
+    line-height: 1.5;
+    color: #666;
+}
+
+/* 头部区域 */
+.app {
+    height: 45px;
+}
+
+
+.app ul li {
+    float: left;
+    /* 浮动变成行内块元素，无内容即无宽 */
+    height: 45px;
+    background-color: #333333;
+    line-height: 45px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+}
+
+.app ul li:nth-child(1) {
+    width: 8%;
+    border-radius: 3px 0 0 3px;
+}
+
+.app ul li:nth-child(1) img {
+    width: 16px;
+}
+
+.app ul li:nth-child(2) {
+
+    width: 10%;
+}
+
+.app ul li:nth-child(2) img {
+    width: 35px;
+}
+
+.app ul li:nth-child(3) {
+    width: 57%;
+}
+
+.app ul li:nth-child(4) {
+    width: 25%;
+    background-color: #f63515;
+    border-radius: 0 3px 3px 0;
+}
+
+.app ul li a {
+    display: block;
+    width: 100%;
+    color: #fff;
+}
+
+/* 搜索模块 */
+.search-wrap {
+    position: fixed;
+    height: 44px;
+    line-height: 44px;
+    text-align: center;
+    /* 消除外边距塌陷问题 */
+    overflow: hidden;
+    max-width: 640px;
+    min-width: 320px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.search-left {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40px;
+    height: 44px;
+    border-radius: 3px 0 0 3px;
+}
+
+.search-left::after {
+    content: '';
+    display: block;
+    width: 20px;
+    height: 18px;
+    background: url(../images/三杠.png) no-repeat;
+    background-size: 100% 100%;
+    margin: 16px 0 0 13px;
+}
+
+.search-right {
+    position: absolute;
+    top: 0;
+    right: 4px;
+    width: 40px;
+    height: 44px;
+    border-radius: 0 3px 3px 0;
+    color: #fff;
+    font-size: 16px;
+}
+
+.search {
+    position: relative;
+    height: 30px;
+    margin: 0 50px;
+    margin-top: 7px;
+    background-color: #fff;
+    border-radius: 18px;
+}
+
+.search input {
+    position: absolute;
+    top: 1px;
+    left: 0;
+    margin-left: 76px;
+    width: 70%;
+    height: 28px;
+    border: 0;
+}
+
+.jd-icon {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    width: 20px;
+    height: 15px;
+    background: url(../images/JD.png) no-repeat;
+    background-size: 100% 100%;
+}
+
+.jd-icon::before {
+    content: '';
+    display: block;
+    width: 1px;
+    height: 15px;
+    background-color: #ccc;
+    margin-left: 28px;
+}
+
+.sou {
+    position: absolute;
+    top: 8px;
+    left: 46px;
+    width: 18px;
+    height: 15px;
+    background: url(../images/jd-sprites.png) no-repeat -80px 0;
+    /* 要缩放精灵图，原版的太大了 */
+    /* 只给一个值，默认是宽度  高度自动等比例跟着缩放 */
+    background-size: 200px;
+}
+
+.slider img {
+    width: 100%;
+    border-radius: 12px;
+}
+
+.brand div {
+    float: left;
+    width: 33.333%;
+}
+
+.brand div img {
+    width: 100%;
+}
+
+
+/* nav模块 */
+nav ul li {
+    float: left;
+    width: 20%;
+}
+
+nav ul li a {
+    display: block;
+    text-align: center;
+}
+
+nav ul li a img {
+    width: 33%;
+    min-width: 32.125px;
+    margin-top: 7px;
+}
+
+nav ul li a p {
+    margin-top: 8px;
+}
+
+/* 新闻模块 */
+.news a {
+    float: left;
+    width: 25%;
+    /* box-sizing: border-box; */
+    /* border-left: 1px solid #ccc; */
+}
+
+.news a:first-child {
+    width: 50%;
+    /* border: 0; */
+}
+
+.news a img {
+    width: 100%;
+}
